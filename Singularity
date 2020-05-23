@@ -9,6 +9,9 @@ MAINTAINER Zhiqi
 RAWR_BASE=/code
 export RAWR_BASE
 
+%file
+    /hello /code
+
 %runscript
 echo "This is the latest Singularity"
 exec /bin/bash /code/rawr.sh "$@"  
