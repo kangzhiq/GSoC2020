@@ -24,5 +24,6 @@ apt-get install -y cmake \
 				locales \
 				language-pack-en \
 				git \
-				python3.6 \
-				pkg-config 
+
+apt-get install python3.6
+apt-get install python2.7
