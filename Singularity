@@ -19,12 +19,12 @@ mkdir -p /code
 echo "RoooAAAAR" >> /code/rawr.sh
 chmod u+x /code/rawr.sh 
 
-        apt-get update
-        apt-get install -y cmake \
-                           locales \
-                           language-pack-en \
-                           git \
-                           python3.6 \
-                           python-pip \
-                           gcc \
-                           pkg-config \
+apt-get update
+apt-get install -y cmake \
+				locales \
+				language-pack-en \
+				git \
+				python3.6 \
+				python-pip \
+				gcc \
+				pkg-config 
