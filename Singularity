@@ -20,10 +20,10 @@ echo "RoooAAAAR" >> /code/rawr.sh
 chmod u+x /code/rawr.sh 
 
 apt-get update
+apt-get install python
 apt-get install -y cmake \
 				locales \
 				language-pack-en \
 				git \
 
-apt-get install python3.6
-apt-get install python2.7
+
