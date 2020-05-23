@@ -25,6 +25,4 @@ apt-get install -y cmake \
 				language-pack-en \
 				git \
 				python3.6 \
-				python-pip \
-				gcc \
 				pkg-config 
