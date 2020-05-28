@@ -40,7 +40,7 @@ cd openpose
 mkdir build
 cd build
 export MKLVARS_ARCHITECTURE=intel64
-. /opt/intel/mkl/bin/mklvars.sh
+#. /opt/intel/mkl/bin/mklvars.sh
 # Apparently not all shells allow parameters with source.
 #. /opt/intel/mkl/bin/mklvars.sh intel64
 
