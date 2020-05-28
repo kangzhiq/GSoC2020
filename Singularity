@@ -28,23 +28,8 @@ apt-get update && apt-get install -y --no-install-recommends intel-mkl-64bit-201
 # In case we need to turn off ssl verify
 # RUN  git config --global http.sslVerify false
 
-#Default mount point used in Shef Uni's ShARC cluster
-mkdir /scratch /data /shared /fastdata
+apt-get update && apt-get install caffe-cuda
 
-#Nvidia driver file mount paths
-mkdir /nvlib /nvbin
-
-#Add nvidia driver paths to the environment variables
-echo "\n #Nvidia driver paths \n" >> /environment
-echo 'export PATH="/nvbin:$PATH"' >> /environment
-echo 'export LD_LIBRARY_PATH="/nvlib:$LD_LIBRARY_PATH"' >> /environment
-
-#Add CUDA paths
-echo "\n #Cuda paths \n" >> /environment
-echo 'export CPATH="/usr/local/cuda/include:$CPATH"' >> /environment
-echo 'export PATH="/usr/local/cuda/bin:$PATH"' >> /environment
-echo 'export LD_LIBRARY_PATH="/usr/local/cuda/lib64:$LD_LIBRARY_PATH"' >> /environment
-echo 'export CUDA_HOME="/usr/local/cuda"' >> /environment
 
 mkdir /localdata
 cd /localdata
