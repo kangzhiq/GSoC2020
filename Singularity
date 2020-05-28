@@ -12,6 +12,7 @@ From: nvcr.io/nvidia/caffe:20.03-py3
     apt-get -y --no-install-recommends update && \
         apt-get -y --no-install-recommends upgrade
 
+
     apt-get install -y --no-install-recommends \
         build-essential \
         git \
