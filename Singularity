@@ -1,6 +1,7 @@
 Bootstrap: docker
 From: nvcr.io/nvidia/caffe:20.03-py3
 
+
 %files
     CMakeLists.patch
     cudacap.cxx
