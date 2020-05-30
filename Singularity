@@ -48,7 +48,8 @@ From: nvcr.io/nvidia/caffe:20.03-py3
         libcanberra-gtk-module && \
         python3 -m pip install \
         numpy \
-        opencv-python
+        opencv-python \
+        scipy
 
     # Up to date ffmpeg
     add-apt-repository -y ppa:jonathonf/ffmpeg-4 && \
