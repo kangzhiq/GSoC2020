@@ -11,7 +11,7 @@ import face_alignment
 import pickle
 
 import argparse
-import tqdm
+from tqdm import tqdm
 
 
 def load_args():
@@ -49,16 +49,19 @@ def video2landmarks(video_path, save_path, device):
     
     # Extracting landmarks
     print("Extracting landmarks:")
-    fa = face_alignment.FaceAlignment(face_alignment.LandmarksType._3D, device='gpu')
+    fa = face_alignment.FaceAlignment(face_alignment.LandmarksType._3D, device=device)
     for i in tqdm(range(len(init_frame)), position=0, leave=True):
         LMs.append(fa.get_landmarks(init_frame[i])[0])
         
     if save_path:
-        with open(save_path, 'wb') as handle:
+        with open(save_path+'landmarks.pickle', 'wb') as handle:
             pickle.dump(LMs, handle, protocol=pickle.HIGHEST_PROTOCOL)
             
     else:
         print("No save path!")
+        return
+        
+    print("Landmarks saved at {}landmarks.pickle".format(save_path))
     
     
 
