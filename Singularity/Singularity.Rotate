@@ -17,6 +17,10 @@ mkdir /project /scratch
 
 #Now install everythin
 apt-get update && apt-get -y install wget
+apt-get install libglib2.0-dev
+apt-get install libsm6
+apt-get install libxrender1
+apt-get install libxext-dev
 
 DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends \
         python3 \
@@ -36,10 +40,6 @@ pip install matplotlib
 pip install opencv-python-headless
 pip install face-alignment
 pip install tensorboard
-
-apt-get install -y libglib2.0-dev
-apt-get install -y libsm6 libxext6
-apt-get install -y libxrender-dev
 
 cd /workspace
 
