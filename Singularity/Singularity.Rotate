@@ -17,10 +17,6 @@ mkdir /project /scratch
 
 #Now install everythin
 apt-get update && apt-get -y install wget
-apt-get install libglib2.0-dev
-apt-get install libsm6
-apt-get install libxrender1
-apt-get install libxext-dev
 
 DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends \
         python3 \
@@ -31,15 +27,15 @@ rm -rf /var/lib/apt/lists/*
 pip3 install pipenv
 pip3 install torch==1.7.1+cu101 torchvision==0.8.2+cu101 torchaudio==0.7.2 -f https://download.pytorch.org/whl/torch_stable.html
 
-pip install dominate
-pip install dill
-pip install scikit-image
-pip install numpy
-pip install scipy
-pip install matplotlib
-pip install opencv-python-headless
-pip install face-alignment
-pip install tensorboard
+pip3 install dominate
+pip3 install dill
+pip3 install scikit-image
+pip3 install numpy
+pip3 install scipy
+pip3 install matplotlib
+pip3 install opencv-python
+pip3 install face-alignment
+pip3 install tensorboard
 
 cd /workspace
 
