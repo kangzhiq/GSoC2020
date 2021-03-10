@@ -36,7 +36,7 @@ pip3 install matplotlib
 pip3 install opencv-python
 pip3 install face-alignment
 pip3 install tensorboard
-
+pip3 install neural_renderer_pytorch
 cd /workspace
 
 %environment
