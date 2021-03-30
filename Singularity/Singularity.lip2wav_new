@@ -23,9 +23,9 @@ from: python
 	pip3 install librosa==0.7.0 
 	pip install lws==1.2.6 
 	pip install Markdown==3.1.1
-	pip install matplotlib==3.1.1
-	pip install numba==0.48
-	pip install numpy==1.16.4
+	pip install matplotlib
+	pip install numba
+	pip install numpy
 	pip install opencv-python-headless
 	pip install pesq==0.0.1
 	pip install pystoi==0.2.2
