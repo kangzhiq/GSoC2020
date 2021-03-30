@@ -17,34 +17,34 @@ from: python
 	apt-get -y install python-pip
 	echo "verifiying pip install"
 	pip -V
-        pip install --upgrade setuptools
-	pip install audioread==2.1.8
-	pip install h5py==2.9.0  
-	pip install librosa==0.7.0 
-	pip install lws==1.2.6 
-	pip install Markdown==3.1.1
-	pip install matplotlib==3.1.1
-	pip install numba==0.48
-	pip install numpy==1.16.4
-	pip install opencv-python-headless
-	pip install pesq==0.0.1
-	pip install pystoi==0.2.2
-	pip install scikit-learn
-	pip install scikit-image
-	pip install scipy
-	pip install sounddevice==0.3.13
-	pip install SoundFile==0.10.2
-	pip install tensorboard==1.13.1
-	pip install tensorboardX==2.0
-	pip install tensorflow-estimator==1.13.0
-	pip install tensorflow-gpu==1.13.1
-	pip install tqdm
-	pip install umap-learn
-	pip install Unidecode
-	pip install visdom
-	pip install webrtcvad
-	pip install youtube-dl
-	pip install torch==1.1.0
+        pip3 install --upgrade setuptools
+	pip3 install audioread==2.1.8
+	pip3 install h5py==2.9.0  
+	pip3 install librosa==0.7.0 
+	pip3 install lws==1.2.6 
+	pip3 install Markdown==3.1.1
+	pip3 install matplotlib==3.1.1
+	pip3 install numba==0.48
+	pip3 install numpy==1.16.4
+	pip3 install opencv-python-headless
+	pip3 install pesq==0.0.1
+	pip3 install pystoi==0.2.2
+	pip3 install scikit-learn
+	pip3 install scikit-image
+	pip3 install scipy
+	pip3 install sounddevice==0.3.13
+	pip3 install SoundFile==0.10.2
+	pip3 install tensorboard==1.13.1
+	pip3 install tensorboardX==2.0
+	pip3 install tensorflow-estimator==1.13.0
+	pip3 install tensorflow-gpu==1.13.1
+	pip3 install tqdm
+	pip3 install umap-learn
+	pip3 install Unidecode
+	pip3 install visdom
+	pip3 install webrtcvad
+	pip3 install youtube-dl
+	pip3 install torch==1.1.0
 	apt-get clean
 
 %environment
