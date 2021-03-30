@@ -24,12 +24,12 @@ from: python
 		matplotlib==3.1.1
 		numba==0.48
 		numpy==1.16.4
-		opencv-python==4.1.1.26
+		opencv-python-headless
 		pesq==0.0.1
 		pystoi==0.2.2
-		scikit-learn==0.21.2
+		scikit-learn
 		scikit-image
-		scipy==1.3.0
+		scipy
 		sounddevice==0.3.13
 		SoundFile==0.10.2
 		tensorboard==1.13.1
