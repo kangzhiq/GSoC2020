@@ -18,31 +18,31 @@ from: python
 	echo "verifiying pip install"
 	pip -V
 	pip install h5py==2.9.0  
-		librosa==0.7.0 
-		lws==1.2.6 
-		Markdown==3.1.1
-		matplotlib==3.1.1
-		numba==0.48
-		numpy==1.16.4
-		opencv-python-headless
-		pesq==0.0.1
-		pystoi==0.2.2
-		scikit-learn
-		scikit-image
-		scipy
-		sounddevice==0.3.13
-		SoundFile==0.10.2
-		tensorboard==1.13.1
-		tensorboardX==2.0
-		tensorflow-estimator==1.13.0
-		tensorflow-gpu==1.13.1
-		tqdm
-		umap-learn
-		Unidecode
-		visdom
-		webrtcvad
-		youtube-dl
-		torch==1.1.0
+	pip install librosa==0.7.0 
+	pip install lws==1.2.6 
+	pip install Markdown==3.1.1
+	pip install matplotlib==3.1.1
+	pip install numba==0.48
+	pip install numpy==1.16.4
+	pip install opencv-python-headless
+	pip install pesq==0.0.1
+	pip install pystoi==0.2.2
+	pip install scikit-learn
+	pip install scikit-image
+	pip install scipy
+	pip install sounddevice==0.3.13
+	pip install SoundFile==0.10.2
+	pip install tensorboard==1.13.1
+	pip install tensorboardX==2.0
+	pip install tensorflow-estimator==1.13.0
+	pip install tensorflow-gpu==1.13.1
+	pip install tqdm
+	pip install umap-learn
+	pip install Unidecode
+	pip install visdom
+	pip install webrtcvad
+	pip install youtube-dl
+	pip install torch==1.1.0
 	apt-get clean
 
 %environment
