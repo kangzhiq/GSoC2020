@@ -13,11 +13,13 @@ from: python
 	echo "Installing all container dependencies!"
 	apt-get -y update
 	apt install -y libgl1-mesa-glx
+
 	apt-get -y install python3.6
 	apt-get -y install python-pip
 	echo "verifiying pip install"
 	pip -V
-        pip install --upgrade setuptools
+        pip3 install --upgrade setuptools
+	pip3 install --upgrade pip
 	pip install audioread==2.1.8
 	pip install h5py  
 	pip3 install librosa==0.7.0 
