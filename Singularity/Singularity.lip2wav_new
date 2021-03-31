@@ -29,7 +29,7 @@ from: python
 	pip3 install numba
 	pip3 install numpy
 	pip3 install opencv-python-headless
-	pip3 install pesq==0.0.1
+	pip install pesq==0.0.1
 	pip3 install pystoi==0.2.2
 	pip3 install scikit-learn
 	pip3 install scikit-image
