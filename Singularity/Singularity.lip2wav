@@ -39,7 +39,7 @@ from: python
 	pip3 install tensorboard==1.13.1
 	pip3 install tensorboardX==2.0
 	pip3 install tensorflow-estimator==1.13.0
-	pip3 install tensorflow-gpu==1.13.1
+	pip3 install tensorflow-gpu==1.13
 	pip3 install tqdm
 	pip3 install umap-learn
 	pip3 install Unidecode
