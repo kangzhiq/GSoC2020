@@ -16,6 +16,7 @@ from: python
 
 	apt-get -y install python3.6
 	apt-get -y install python-pip
+	apt-get -y install ffmpeg
 	echo "verifiying pip install"
 	pip -V
         pip3 install --upgrade setuptools
