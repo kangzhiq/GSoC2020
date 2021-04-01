@@ -1,0 +1,62 @@
+Bootstrap: docker
+From: tensorflow/tensorflow
+
+%labels
+AUTHOR zhiqi@inria.fr
+
+%setup
+mkdir -p ${SINGULARITY_ROOTFS}/opt/
+
+%environment
+export PYTHONPATH=/opt/
+
+%post
+# post-setup script
+echo "Installing all container dependencies!"
+apt-get -y update
+apt install -y libgl1-mesa-glx
+
+apt-get -y install python3.6
+apt-get -y install python-pip
+apt-get -y install ffmpeg
+echo "verifiying pip install"
+pip -V
+# load environment variables
+. /environment
+
+# use bash as default shell
+echo 'SHELL=/bin/bash' >> /environment
+chmod +x /environment
+
+# default mount paths
+mkdir -p /scratch /data /usr/bin
+
+pip install tensorflow==2.0.0
+pip install keras==2.3.0 jupyter notebook matplotlib
+pip install h5py numpy scipy opencv-python-headless moviepy ffmpeg-python
+pip install audioread==2.1.8 
+h5py==2.9.0
+inflect
+librosa==0.7.0
+lws==1.2.6
+Markdown==3.1.1
+multiprocess
+numba
+pesq==0.0.1
+PyQt5
+pystoi==0.2.2
+scikit-learn==0.21.2
+scikit-image
+sounddevice==0.3.13
+SoundFile==0.10.2
+tensorboard==1.13.1
+tensorboardX==2.0
+tqdm
+umap-learn
+Unidecode
+visdom
+webrtcvad
+youtube-dl
+torch==1.1.0
+
+%runscript
