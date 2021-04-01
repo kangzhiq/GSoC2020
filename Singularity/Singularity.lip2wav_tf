@@ -30,7 +30,7 @@ chmod +x /environment
 
 # default mount paths
 mkdir -p /scratch /data /usr/bin
-
+pip install --upgrade pip
 pip install tensorflow==2.0.0
 pip install keras==2.3.0 jupyter notebook matplotlib
 pip install h5py numpy scipy opencv-python-headless moviepy ffmpeg-python
