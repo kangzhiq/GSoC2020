@@ -20,7 +20,7 @@ apt-get -y install python3.6
 apt-get -y install python-pip
 apt-get -y install ffmpeg
 echo "verifiying pip install"
-pip -V
+
 # load environment variables
 . /environment
 
@@ -30,11 +30,11 @@ chmod +x /environment
 
 # default mount paths
 mkdir -p /scratch /data /usr/bin
-pip install --upgrade pip
-pip install tensorflow==2.0.0
-pip install keras==2.3.0 jupyter notebook matplotlib
-pip install h5py numpy scipy opencv-python-headless moviepy ffmpeg-python
-pip install audioread==2.1.8 
+pip3 install --upgrade pip
+pip3 install tensorflow==2.0.0
+pip3 install keras==2.3.0 jupyter notebook matplotlib
+pip3 install h5py numpy scipy opencv-python-headless moviepy ffmpeg-python
+pip3 install audioread==2.1.8 
 h5py==2.9.0
 inflect
 librosa==0.7.0
