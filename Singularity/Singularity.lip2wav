@@ -45,7 +45,7 @@ from: python
 	pip3 install visdom
 	pip3 install webrtcvad
 	pip3 install youtube-dl
-	pip3 install torch==1.1.0
+	pip3 install torch
 	apt-get clean
 
 
