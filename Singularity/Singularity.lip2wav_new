@@ -1,5 +1,5 @@
 Bootstrap: docker
-from: python
+from: tensorflow/tensorflow
 
 %help
 	This recipe is a test for building a runnable container for the lip frontalization pipeline.
